@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Colores */
+    
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display" , sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    width: 365px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px var(--desaturated-blue);
+    margin-bottom: 30px;
+}
+
+.card-body {
+    padding: 15px 20px;
+    
+}
+
+.card-body .text {
+    text-align: center;
+}
+
+.card-body .text h1{
+    margin-top: 15px;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.card-body .text p{
+    color: var(--desaturated-blue);
+    line-height: 1.6rem;
+}
+
+.card-body .plan{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+.card-body .type {
+    padding: 30px 0px;
+    text-align: left;    
+}
+
+.card-body .plan .type h3 {
+    color: var(--dark-blue);
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card-body .plan .type p {
+    color: var(--desaturated-blue);
+    margin: 3px 0px 0px 0px;
+}
+
+.card-body .plan .change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-body .plan .change:hover {
+    opacity: 0.7;
+    transition: ease 0.5s;
+}
+
+button {
+    margin-top: 15px;
+    font-weight: 900 ;
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.actions .payment {
+    color: white;
+    background-color: hsl(260, 34%, 57%);
+    border-style: none;
+    box-shadow: 0px 5px 10px var(--desaturated-blue);
+}
+
+.actions .payment:hover{
+    opacity: 0.8;
+    transition: ease 0.5s;
+}
+
+.actions .order {
+    color: var(--desaturated-blue);
+    background-color: white;
+    border-style: none;
+}
+
+.actions .order:hover {
+    color: rgb(67, 67, 67);
+    background-color: var(--very-pale-blue);
+    transition: ease 0.5s;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+  
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover { 
+    color: orange; 
+}
